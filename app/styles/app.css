@@ -1,6 +1,13 @@
+.test-component,
 .test-select-box__selected-option {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
   min-height: 28px;
   cursor: pointer;
+}
+
+.test-component,
+.test-select-box__options {
+  max-height: 50vh;
+  overflow: auto;
 }

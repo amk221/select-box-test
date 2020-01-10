@@ -1,8 +1,10 @@
 <SelectBox @classNamePrefix="test-select-box" @onSelect={{this.selectFoo}} as |sb|>
   <sb.SelectedOption {{on "click" sb.toggle}}></sb.SelectedOption>
   {{#if sb.isOpen}}
-    {{#each @options as |option|}}
-      <sb.Option @value={{option}}>{{yield option}}</sb.Option>
-    {{/each}}
+    <sb.Options>
+      {{#each @options as |option|}}
+        <sb.Option @value={{option}}>{{yield option}}</sb.Option>
+      {{/each}}
+    </sb.Options>
   {{/if}}
 </SelectBox>

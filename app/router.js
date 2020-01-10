@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('power');
   this.route('zestia');
+  this.route('ember');
 });
 
 export default Router;
