@@ -1,11 +1,12 @@
-import Component from '@ember/component';
-import { action, set } from '@ember/object';
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 
 export default class TestComponent extends Component {
-  tagName = '';
+  @tracked show;
 
   @action
   toggle() {
-    set(this, 'show', !this.show);
+    this.show = !this.show;
   }
 }

@@ -6,6 +6,11 @@
   cursor: pointer;
 }
 
+.test-select-box__option--active {
+  background-color: #5797fb;
+  color: white;
+}
+
 .test-component,
 .test-select-box__options {
   max-height: 50vh;
