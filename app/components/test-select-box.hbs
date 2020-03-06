@@ -1,4 +1,4 @@
-<SelectBox @classNamePrefix="test-select-box" @onSelect={{this.selectFoo}} as |sb|>
+<SelectBox @classNamePrefix="test-select-box" @onSelect={{this.handleSelection}} as |sb|>
   <sb.SelectedOption {{on "click" sb.toggle}}></sb.SelectedOption>
   {{#if sb.isOpen}}
     <sb.Options>
