@@ -3,7 +3,7 @@
 <div class="test-component" {{on "click" this.toggle}}>
   {{#if this.show}}
     {{#each @options as |option|}}
-      <TestComponent::Child>
+      <TestComponent::Child @activeChild={{this.activeChild}} @onActivate={{this.activateChild}}>
         {{yield option}}
       </TestComponent::Child>
     {{/each}}

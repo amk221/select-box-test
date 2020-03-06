@@ -6,6 +6,7 @@
   cursor: pointer;
 }
 
+.test-component__child--active,
 .test-select-box__option--active {
   background-color: #5797fb;
   color: white;

@@ -1,1 +1,5 @@
-{{yield}}
+{{!-- template-lint-disable no-invalid-interactive --}}
+
+<div class="test-component__child {{if this.isActive "test-component__child--active"}}" {{on "mouseenter" this.activate}}>
+  {{yield}}
+</div>
