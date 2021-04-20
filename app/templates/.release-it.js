@@ -2,6 +2,6 @@
 
 module.exports = {
   hooks: {
-    'before:init': ['npm test']
-  }
+    'before:init': ['npm test'],
+  },
 };

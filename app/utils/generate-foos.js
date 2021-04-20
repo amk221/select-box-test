@@ -4,7 +4,7 @@ export default function generateFoos() {
   for (let i = 0, l = 500; i < l; i++) {
     foos.push({
       id: i,
-      name: `Foo ${i}`
+      name: `Foo ${i}`,
     });
   }
 
