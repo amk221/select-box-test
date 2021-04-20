@@ -1,9 +1,11 @@
-<SelectBox @classNamePrefix="test-select-box" @onSelect={{this.handleSelection}} as |sb|>
-  <sb.SelectedOption {{on "click" sb.toggle}}></sb.SelectedOption>
+<SelectBox @onSelect={{this.handleSelection}} as |sb|>
+  <sb.SelectedOption {{on 'click' sb.toggle}} />
   {{#if sb.isOpen}}
     <sb.Options>
       {{#each @options as |option|}}
-        <sb.Option @value={{option}}>{{yield option}}</sb.Option>
+        <sb.Option @value={{option}}>
+          {{yield option}}
+        </sb.Option>
       {{/each}}
     </sb.Options>
   {{/if}}

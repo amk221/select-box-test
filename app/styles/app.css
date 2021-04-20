@@ -1,5 +1,5 @@
 .test-component,
-.test-select-box__selected-option {
+.select-box__selected-option {
   border: 1px solid #aaaaaa;
   border-radius: 3px;
   min-height: 28px;
@@ -7,13 +7,13 @@
 }
 
 .test-component__child--active,
-.test-select-box__option--active {
+.select-box__option[aria-current='true'] {
   background-color: #5797fb;
   color: white;
 }
 
 .test-component,
-.test-select-box__options {
+.select-box__options {
   max-height: 50vh;
   overflow: auto;
 }

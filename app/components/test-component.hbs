@@ -1,9 +1,12 @@
-{{!-- template-lint-disable no-invalid-interactive  --}}
+{{! template-lint-disable no-invalid-interactive  }}
 
-<div class="test-component" {{on "click" this.toggle}}>
+<div class='test-component' {{on 'click' this.toggle}}>
   {{#if this.show}}
     {{#each @options as |option|}}
-      <TestComponent::Child @activeChild={{this.activeChild}} @onActivate={{this.activateChild}}>
+      <TestComponent::Child
+        @activeChild={{this.activeChild}}
+        @onActivate={{this.activateChild}}
+      >
         {{yield option}}
       </TestComponent::Child>
     {{/each}}
